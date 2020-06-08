@@ -189,7 +189,7 @@ class Controller extends CController
         $version = (new VersionService())->getVersion();
 
         header('X-Developer: ght^^');
-        header('X-Version: ' . $version ? $version : '--');
+        //header('X-Version: ' . $version ? $version : '--');
         header('X-Website: https://ghtweb.ru');
     }
 }
